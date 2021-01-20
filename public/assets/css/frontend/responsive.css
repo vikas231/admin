@@ -1,0 +1,20 @@
+/*
+Project Name: SeizeIt
+CSS Author: Anmol
+Author Designation: Web Designer
+Framework Used: Bootstrap
+Organization: Code Brew Labs
+*/
+
+@media (max-width:768px) {
+  .download-app-block a, .main-bannar a {
+    margin-right: 0px!important;
+    margin-bottom: 10px;
+    display: inline-block;
+    }
+	
+	.top-search .form-control { width: auto; }
+	.pagi-pera{text-align:center;}
+	.pagination-sec .pagination {float:none; justify-content: center;}
+	.dash-table .table tr th{white-space:nowrap;}
+}

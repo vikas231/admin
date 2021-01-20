@@ -1,0 +1,418 @@
+/*
+Project Name: Job Platform
+CSS Author: Navneet
+Contact No : +919814097975;
+Author Designation: Web Designer
+Framework Used: Bootstrap
+Organization: Code Brew Labs
+*/
+
+@font-face {
+    font-family: "Google Sans";;
+    src: url('../fonts/GoogleSans-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Google Sans";;
+    src: url('../fonts/GoogleSans-Medium.ttf');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Google Sans";;
+    src: url('../fonts/GoogleSans-Bold.ttf');
+    font-weight: 800;
+    font-style: normal;
+}
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+html,
+body {
+    font-family: "Google Sans";
+    font-weight: 400;
+    font-style: normal;
+    background: #fff;
+    letter-spacing: 1px;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.display-none {
+    display: none !important;
+}
+.full-width {
+    width: 100%!important;
+}
+.btn {
+  width: fit-content;
+  width: -moz-fit-content;
+  background-color: #8BC541;
+  padding: 14px 30px;
+  font-size: 16px;
+  color: #324147;
+  letter-spacing: 1.8px;
+  /*box-shadow: 0 15px 40px -10px rgba(0, 0, 0, 0.3);*/
+  position: relative;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 0;
+  text-transform: uppercase;
+  /* btn text */
+}
+.btn span {
+  z-index: 1;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;  
+  font-weight: 600;
+}
+.btn:before, .btn:after {
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 100%;
+    top: 0;
+    transition: all 0.4s ease;
+    background-color: #71a52f;
+    border-radius: 4px;
+}
+.btn:before {
+  left: 0;
+}
+.btn:after {
+  right: 0;
+}
+.btn:hover {
+  transition: all 0.4s ease;
+  box-shadow: 0 8px 20px -12px rgba(0, 0, 0, 0.2);
+  letter-spacing: 1.5px;
+  color: white;
+}
+.btn:hover:before, .btn:hover:after {
+  width: 51%;
+}
+button:focus {
+  outline: none;
+}
+.list-inline li {
+  list-style: none;
+  display: inline-block;
+}
+/*Homepage Css*/
+header {
+  background: #fff;
+}
+header nav {
+    background: transparent;
+}
+header nav .navbar-toggle {
+  margin: 13px 15px 13px 0;
+}
+header nav a {
+  font-size: 17px;
+  transition: all 0.3s ease;
+}
+header.shrink {
+  min-height: 35px;
+}
+header.shrink .navbar-brand {
+  font-size: 10px;
+  padding: 4px 0;
+}
+
+header.shrink .navbar-toggle {
+  margin: 8px 15px 8px 0;
+  padding: 4px 5px;
+}
+header .dropdown-toggle::after {
+    display: none;
+}
+header .nav-link.dropdown-toggle {
+    color: #000;
+}
+header .navbar-brand img {
+    height: 38px;
+    transition: all .3s ease-in-out 0s;
+}
+
+header.shrink {
+  background: #fff;
+}
+header .shrink .navbar-brand img{
+    height: 24px;
+    transition: all .3s ease-in-out 0s;
+} 
+.login-btn {
+   border: 1px solid #8BC541;
+  border-radius: 4px;
+  background-color: #FFFFFF;
+  color: #8BC541;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  line-height: 18px;
+  padding: 6px 15px;
+}
+.signup-btn {
+  border: 1px solid #8BC541;
+  border-radius: 4px;
+  background-color: #8BC541;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  line-height: 18px;
+  padding: 6px 15px;
+}
+.header-setting {
+  margin-top: 60px;
+}
+/*Main Bannar*/
+.main-bannar {
+  background-image: url(../images/banner-image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: calc(100vh - 60px);
+  padding-top: 25vh;
+}
+.main-bannar h4 {
+  color: #241E1F;
+  font-size: 48px;
+  font-weight: bold;
+  letter-spacing: -0.6px;
+  line-height: 60px;
+}
+.main-bannar p {
+  color: #241E1F;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 24px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+/*Nexe Section*/
+.join-our-team {
+  padding: 70px 0;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.join-our-team .bottom-pattern {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+.join-our-team h4 {
+  color: #241E1F;
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: -0.5px;
+  line-height: 41px;
+}
+.join-our-team p {
+  opacity: 0.5;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+.join-card {
+  border-radius: 14px;
+  background-color: #FFFFFF;
+  box-shadow: inset 0 3px 0 0 #57C5E9, 0 1px 6px 0 rgba(0,0,0,0.08);
+  overflow: hidden;
+}
+.join-card .image-block {
+  height: 232px;
+}
+.join-card .image-block img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.join-btn {
+  border: 1px solid #8BC541;
+  border-radius: 4px;
+}
+.join-card h5 {
+  color: #241E1F;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 32px;
+}
+.join-card .p-3 p {
+  opacity: 0.86;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+.join-card button {
+  border: 1px solid #8BC541;
+  border-radius: 4px;
+  background: #fff;
+  padding: 8px 25px;
+  color: #8BC541;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 18px;
+  transition: all .3s ease-in-out 0s;
+}
+.join-card button:hover {
+  background: #8BC541;
+  color: #fff;
+}
+/*Next Secion*/
+.our-clients {
+  background-color: #1AA7D5;
+  padding: 70px 0;
+}
+.our-clients h4 {
+  color: #FFFFFF;
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: -0.5px;
+  line-height: 41px;
+}
+.our-clients p {
+  color: #FFFFFF;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+.client-card {
+  border-radius: 14px;
+  background-color: #FFFFFF;
+  box-shadow: 0 1px 6px 0 rgba(0,0,0,0.08);
+  overflow: hidden;
+  margin-top: 30px;
+}
+.client-card h5 {
+  color: #241E1F;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 32px;
+}
+.client-card h6 {
+   opacity: 0.86;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 22px;
+  display: block;
+  margin-bottom: 20px;
+}
+/*Next Section*/
+.our-services-solution {
+  padding: 70px 0;
+}
+.our-services-solution .nav-pills .nav-link.active {
+  padding: 0px;
+  background: transparent;
+  color: #1AA7D5;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+.our-services-solution .nav-pills .nav-link {
+  padding: 0px;
+  color: #241E1F;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 24px;
+  margin-bottom: 30px;
+} 
+.slot-card {
+  border-radius: 14px;
+  background-color: #FFFFFF;
+  box-shadow: inset 0 3px 0 0 #1AA7D5, 0 1px 6px 0 rgba(0,0,0,0.08);
+  position: relative;
+  padding: 25px 30px;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+.slot-card h5 {
+  color: #241E1F;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 32px;
+  margin-bottom: 20px;
+}
+.slot-card span {
+  opacity: 0.86;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 24px;
+  margin-bottom: 60px;
+  display: block;
+}
+.slot-card .right-image {
+  position: absolute;
+  right: 0px;
+  bottom: -20px;
+}
+.slot-card button {
+    border: 1px solid #8BC541;
+    border-radius: 4px;
+    background: #fff;
+    padding: 10px 25px;
+    color: #8BC541;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 18px;
+    transition: all .3s ease-in-out 0s;
+    margin-bottom: 20px;
+}
+.slot-card button:hover {
+    background: #8BC541;
+    color: #fff;
+}
+/*Footer*/
+footer {
+  background-color: #1AA7D5;
+  padding: 70px 0;
+}
+footer p {
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 22px;
+}
+footer h5 {
+  color: #FFFFFF;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  line-height: 17px;
+}
+footer a {
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 34px;
+}
